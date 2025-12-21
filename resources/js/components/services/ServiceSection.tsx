@@ -8,6 +8,7 @@ interface ServiceSectionProps {
   title: string;
   description: string;
   features: string[];
+  image: string;
   isReversed?: boolean;
 }
 
@@ -16,6 +17,7 @@ export function ServiceSection({
   title,
   description,
   features,
+  image,
   isReversed = false,
 }: ServiceSectionProps) {
   const { openModal } = useConsultationModal();
@@ -53,17 +55,12 @@ export function ServiceSection({
           </div>
 
           <div className={cn("lg:order-1", isReversed && "lg:order-1")}>
-            <div className="aspect-square max-w-md mx-auto rounded-2xl bg-gradient-to-br from-primary/10 via-muted to-secondary/10 flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <span className="font-display text-3xl font-bold text-primary">
-                    {title.split(" ")[0][0]}
-                  </span>
-                </div>
-                <span className="font-display text-xl font-semibold text-primary/60">
-                  {title}
-                </span>
-              </div>
+            <div className="aspect-square max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={image}
+                alt={title}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
