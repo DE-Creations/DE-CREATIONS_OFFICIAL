@@ -22,7 +22,7 @@ export function WhyChooseUs() {
                 className="flex gap-4 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
                     <CheckCircle className="h-5 w-5 text-secondary" />
                   </div>

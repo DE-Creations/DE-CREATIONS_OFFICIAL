@@ -6,7 +6,7 @@ export function Hero() {
   const { openModal } = useConsultationModal();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-muted/50 to-background">
+    <section className="relative overflow-hidden bg-linear-to-b from-muted/50 to-background">
       <div className="container section-padding">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">

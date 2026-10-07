@@ -34,7 +34,7 @@ export function ContactInfo() {
       <div className="space-y-6">
         {contactDetails.map((detail) => (
           <a key={detail.label} href={detail.href} className="flex items-start gap-4 group">
-            <div className="w-12 h-12 rounded-lg bg-primary-foreground/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary-foreground/20 transition-colors">
+            <div className="w-12 h-12 rounded-lg bg-primary-foreground/10 flex items-center justify-center shrink-0 group-hover:bg-primary-foreground/20 transition-colors">
               <detail.icon className="h-5 w-5" />
             </div>
             <div>

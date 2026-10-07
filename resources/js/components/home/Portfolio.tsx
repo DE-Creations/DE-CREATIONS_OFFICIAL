@@ -83,7 +83,7 @@ export function Portfolio() {
                     className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
                   />
                 ) : (
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
                     <span className="font-display text-lg font-semibold text-primary/60">
                       {project.title}
                     </span>

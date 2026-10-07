@@ -49,7 +49,7 @@ export function useAppointments(statusFilter?: string[]) {
       if (error) throw error;
 
       // Fetch profiles for acted_by_user_ids
-      const userIds = [...new Set(data.filter(a => a.acted_by_user_id).map(a => a.acted_by_user_id))];
+      const userIds = [...new Set(data.map(a => a.acted_by_user_id).filter((id): id is string => !!id))];
       let profilesMap: Record<string, { first_name: string; last_name: string }> = {};
       
       if (userIds.length > 0) {

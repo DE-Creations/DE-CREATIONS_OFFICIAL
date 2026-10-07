@@ -14,7 +14,7 @@ const ContactUs = () => {
         />
       </Helmet>
 
-      <section className="section-padding bg-gradient-to-b from-muted/50 to-background">
+      <section className="section-padding bg-linear-to-b from-muted/50 to-background">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
@@ -31,7 +31,7 @@ const ContactUs = () => {
               <ContactInfo />
             </div>
             <div className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              <div className="bg-card rounded-2xl p-8 md:p-10 border border-border/50 shadow-sm">
+              <div className="bg-card rounded-2xl p-8 md:p-10 border border-border/50 shadow-xs">
                 <h2 className="font-display text-2xl font-bold text-foreground mb-6">
                   Send us a Message
                 </h2>

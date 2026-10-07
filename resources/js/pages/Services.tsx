@@ -15,7 +15,7 @@ const Services = () => {
         />
       </Helmet>
 
-      <section className="section-padding bg-gradient-to-b from-muted/50 to-background">
+      <section className="section-padding bg-linear-to-b from-muted/50 to-background">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">

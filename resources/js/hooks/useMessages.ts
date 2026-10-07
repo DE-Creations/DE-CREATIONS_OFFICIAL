@@ -47,7 +47,7 @@ export function useMessages(statusFilter?: string[]) {
       if (error) throw error;
 
       // Fetch profiles for acted_by_user_ids
-      const userIds = [...new Set(data.filter(m => m.acted_by_user_id).map(m => m.acted_by_user_id))];
+      const userIds = [...new Set(data.map(m => m.acted_by_user_id).filter((id): id is string => !!id))];
       let profilesMap: Record<string, { first_name: string; last_name: string }> = {};
       
       if (userIds.length > 0) {

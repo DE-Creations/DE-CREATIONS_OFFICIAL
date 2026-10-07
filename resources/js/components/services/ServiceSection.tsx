@@ -41,7 +41,7 @@ export function ServiceSection({
             <ul className="space-y-4 mb-8">
               {features.map((feature) => (
                 <li key={feature} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5">
+                  <div className="shrink-0 w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5">
                     <Check className="h-4 w-4 text-secondary" />
                   </div>
                   <span className="text-foreground">{feature}</span>
