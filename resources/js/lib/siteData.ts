@@ -1,3 +1,7 @@
+import webDevelopmentImg from '@/assets/services/web-development.jpg';
+import softwareDevelopmentImg from '@/assets/services/software-development.jpg';
+import digitalMarketingImg from '@/assets/services/digital-marketing.jpg';
+
 export const siteData = {
   company: {
     name: "DE Creations",
@@ -22,6 +26,7 @@ export const siteData = {
         "Performance optimization",
       ],
       icon: "globe",
+      image: webDevelopmentImg,
     },
     {
       id: "software-development",
@@ -36,6 +41,7 @@ export const siteData = {
         "Legacy system modernization",
       ],
       icon: "code",
+      image: softwareDevelopmentImg,
     },
     {
       id: "digital-marketing",
@@ -50,6 +56,7 @@ export const siteData = {
         "Analytics & reporting",
       ],
       icon: "trending-up",
+      image: digitalMarketingImg,
     },
   ],
   portfolio: {

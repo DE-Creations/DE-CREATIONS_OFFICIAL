@@ -39,6 +39,7 @@ const Services = () => {
             title={service.title}
             description={service.shortDescription}
             features={service.features}
+            image={service.image}
             isReversed={index % 2 === 1}
           />
         </div>
